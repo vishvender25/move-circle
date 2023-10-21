@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move it</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+    body{
+        text-align: center;
+        color: #09639b;
+        background-color: #FFF6F6;
+        font-size: large;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .body-container{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center ;
+
+    }
+    .container{
+        width: 500px;
+        height: 500px;
+        background-color: #FFDFDF;
+    }
+    /* .container{
+     width: 50%;
+     height: 50vh;
+     background-color: aqua;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    } */
+    .person{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin-left: 200px;
+        margin-top: 200px;
+        background-color: #F875AA;
+        border: none;
+        border-radius: 50%;
+    }
+    </style>
+</head>
+<body>
+    <h1>Move the circle within the box</h1>
+    <h3>Press 'a' to move left</h3>
+    <h3>Press 'd' to move right</h3>
+    <h3>Press 'w' to move up</h3>
+    <h3>Press 's' to move dowm</h3>
+    <div class="body-container">
+    <div class="container" id="move-obj">
+        <div class="person" id="move-obj2">
+
+        </div>
+    
+    </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
